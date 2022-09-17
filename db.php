@@ -24,25 +24,43 @@ function Add(){
 }
     
     
+function WriteOnScreen(){
+    global $connection;
+    
+    $query = "SELECT * FROM tasks";
     
     
+    $result = mysqli_query($connection,$query);
     
+    if(!$result){
+        die('Nepodarilo sa precitat data z databazy'.mysqli_error());
+    }
     
+    while($row = mysqli_fetch_assoc($result)){
+        echo $row['id'];
+        echo ' ';
+        echo $row['name'];
+        echo ' ';
+        echo $row['place'];
+        echo ' ';
+        echo $row['date'];
+        echo '<br>';
+    }
+}    
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+function Delete(){
+    global $connection;
+    $id = $_POST['id'];
+        
+    $query = "DELETE FROM tasks WHERE id = '$id'";
+        
+    $result = mysqli_query($connection,$query);
+
+    if(!$result){
+        die('Nepodarilo sa vymazat data z databazy'.mysqli_error());
+    }    
+
+
+}
     
 ?>
