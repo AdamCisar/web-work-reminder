@@ -1,6 +1,13 @@
 <?php
     include 'db.php';
     Connection();
+
+    
+    if(isset($_POST['submit'])){
+        Add();
+    }
+       
+    
 ?>
 
 
@@ -18,12 +25,12 @@
 
 <body>
     
-    <form action="index.php">
+    <form action="index.php" method="post">
         
-        <input type="text" placeholder="Meno a priezvisko" >
-        <input type="text" placeholder="Miesto" >
-        <input type="text" placeholder="Dátum" >
-        <input type="submit" value="Potvrdiť" >
+        <input type="text" name="name" placeholder="Meno a priezvisko" >
+        <input type="text" name="place" placeholder="Miesto" >
+        <input type="date" name="date" placeholder="Dátum" >
+        <input type="submit" name="submit" value="Potvrdiť" >
         
         
         
