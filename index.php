@@ -56,12 +56,21 @@
         
     </select>
     </form>
+    <br>
     
-    <?php
-    WriteOnScreen();
-    
-    ?>
-    
+       
+    <table>
+        <th>Číslo zákazky</th>
+        <th>Meno</th>
+        <th>Miesto</th>
+        <th>Dátum</th>
+           <?php
+        WriteOnScreen();
+
+        ?>
+    </table>
+     
+   
    
 
 </body>

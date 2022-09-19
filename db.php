@@ -14,6 +14,10 @@ function Add(){
     $place = $_POST['place'];
     $date = $_POST['date'];
     
+    $name = mysqli_real_escape_string($connection,$name);
+    $place = mysqli_real_escape_string($connection,$place);
+    $date = mysqli_real_escape_string($connection,$date);
+    
     $query = "INSERT INTO tasks(name,place,date) VALUES('$name','$place','$date')";
         
     $result = mysqli_query($connection,$query);
@@ -37,14 +41,8 @@ function WriteOnScreen(){
     }
     
     while($row = mysqli_fetch_assoc($result)){
-        echo $row['id'];
-        echo ' ';
-        echo $row['name'];
-        echo ' ';
-        echo $row['place'];
-        echo ' ';
-        echo $row['date'];
-        echo '<br>';
+        echo "<tr><td>". $row['id'].'</td><td>'.$row['name'].'</td><td>'.$row['place'].'</td><td>'.$row['date'].'</td></tr>';
+       
     }
 }    
     
