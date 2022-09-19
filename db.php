@@ -41,9 +41,13 @@ function WriteOnScreen(){
     }
     
     while($row = mysqli_fetch_assoc($result)){
-        echo "<tr><td>". $row['id'].'</td><td>'.$row['name'].'</td><td>'.$row['place'].'</td><td>'.$row['date'].'</td></tr>';
+        
+        echo '<tr>';
+        echo "<td>". $row['id'].'</td><td>'.$row['name'].'</td><td>'.$row['place'].'</td><td>'.$row['date'].'</td>';    
        
-    }
+        echo '<td class="button"> <input type="button" name="delete2" value="Odstrániť"></td>';
+        echo '</tr>';
+    } 
 }    
     
 function Delete(){

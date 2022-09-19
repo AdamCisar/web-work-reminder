@@ -22,3 +22,26 @@ body {
 th {
     border: solid 1px black;
 }
+
+td {
+    border-bottom: solid 1px white;
+}
+
+.button {
+    font-family: monospace;
+    background: tomato;
+    border: none;
+   
+
+}
+
+input[type=button] {
+    font-family: monospace;
+    background: tomato;
+    border: none;
+    text-align: center;
+}
+
+input[type=button]:hover {
+    color:white;
+}
