@@ -28,11 +28,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css" >
 </head>
 
 <body>
-    
+   <div class="container">
     <form action="index.php" method="post">
         
         <input type="text" name="name" placeholder="Meno a priezvisko" > <br>
@@ -48,29 +48,25 @@
         <?php
         while($row = mysqli_fetch_assoc($result)){
         $id = $row['id'];
-        echo "<option value='$id'>$id</option>";
-            
+        echo "<option value='$id'>$id</option>";  
         }
-    ?>
-        
-        
-    </select>
+        ?>
+        </select>
     </form>
     <br>
     
-       
+  
     <table>
         <th>Číslo zákazky</th>
         <th>Meno</th>
         <th>Miesto</th>
         <th>Dátum</th>
-           <?php
+        <?php
         WriteOnScreen();
-
         ?>
     </table>
-     
-   
+   </div>  
+
    
 
 </body>
