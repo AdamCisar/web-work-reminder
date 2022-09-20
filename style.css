@@ -1,3 +1,4 @@
+/*tlacidlo odstranit*/
 button {
     font-family: monospace;
     background: tomato;
@@ -58,4 +59,36 @@ td {
     border-bottom: solid 1px white;
 }
 
+input[type=text]{
+    border-radius: 30px;
+    border: solid 1px black;
+    margin-top: 3px;
+    
+}
+input[type=submit]{
+    margin-top: 3px;
+    font-family: monospace;
+    background: green;
+    border: none;
+    text-align: center;
+    width: 117.98px;
+    height: 25.67px;
+}
 
+/*kalendar*/
+input[type=submit]:hover {
+    color:white;
+}
+
+input[type=date]{
+    margin-top: 3px;
+    border-radius: 30px;
+    border: solid 1px black;
+}
+
+
+::-webkit-datetime-edit-text { color: red;}
+::-webkit-datetime-edit-month-field { color: blue; }
+::-webkit-datetime-edit-day-field { color: green; }
+::-webkit-datetime-edit-year-field { color: purple; }
+::-webkit-inner-spin-button { display: none; }
