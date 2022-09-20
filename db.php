@@ -27,7 +27,7 @@ function Add(){
     }
 }
     
-    
+//vypisuje z databazy na stranku + tlacidlo odstranit
 function WriteOnScreen(){
     global $connection;
     
