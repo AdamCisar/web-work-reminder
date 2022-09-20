@@ -21,8 +21,7 @@ button:hover {
 .divInput{
     width: 200px;
     margin-top: 100px;
-    margin-left: 30px;
-    
+    margin-left: 30px; 
 }
 .divTable{
     width: 600px;
@@ -64,6 +63,7 @@ input[type=text]{
     border: solid 1px black;
     margin-top: 3px;
     
+    
 }
 input[type=submit]{
     margin-top: 3px;
@@ -85,6 +85,7 @@ input[type=date]{
     border-radius: 30px;
     border: solid 1px black;
 }
+
 
 
 ::-webkit-datetime-edit-text { color: red;}

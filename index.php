@@ -7,7 +7,7 @@
         Add();
     }
        
-    if(isset($_GET['id'])){
+    if(isset($_POST['id'])){
         Delete();
     }
     
@@ -46,7 +46,7 @@
     
         <br>
     <div class="divTable">
-      <form action="index.php" method="get">
+      <form action="index.php" method="post">
         <table>
             <th>Meno</th>
             <th>Miesto</th>

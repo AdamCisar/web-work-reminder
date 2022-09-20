@@ -53,7 +53,7 @@ function WriteOnScreen(){
     
 function Delete(){
     global $connection;
-    $id = $_GET['id'];
+    $id = $_POST['id'];
         
     $query = "DELETE FROM tasks WHERE id = '$id'";
         
