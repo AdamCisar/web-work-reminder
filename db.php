@@ -45,14 +45,15 @@ function WriteOnScreen(){
         echo '<tr>';
         echo "<td>". $row['id'].'</td><td>'.$row['name'].'</td><td>'.$row['place'].'</td><td>'.$row['date'].'</td>';    
        
-        echo '<td class="button"> <input type="button" name="delete2" value="Odstrániť"></td>';
+        echo '<td class="button"> 
+        <button type="submit" name="id" value="'.$row['id'].'">Odstrániť</button></td>';
         echo '</tr>';
     } 
 }    
     
 function Delete(){
     global $connection;
-    $id = $_POST['id'];
+    $id = $_GET['id'];
         
     $query = "DELETE FROM tasks WHERE id = '$id'";
         

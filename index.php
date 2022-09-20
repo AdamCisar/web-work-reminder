@@ -7,7 +7,7 @@
         Add();
     }
        
-    if(isset($_POST['delete'])){
+    if(isset($_GET['id'])){
         Delete();
     }
     
@@ -55,7 +55,7 @@
     </form>
     <br>
     
-  
+  <form action="index.php" method="get">
     <table>
         <th>Číslo zákazky</th>
         <th>Meno</th>
@@ -65,6 +65,7 @@
         WriteOnScreen();
         ?>
     </table>
+  </form>    
    </div>  
 
    
