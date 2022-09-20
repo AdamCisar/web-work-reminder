@@ -33,39 +33,30 @@
 
 <body>
    <div class="container">
-    <form action="index.php" method="post">
-        
-        <input type="text" name="name" placeholder="Meno a priezvisko" > <br>
-        <input type="text" name="place" placeholder="Miesto" ><br>
-        <input type="date" name="date" placeholder="Dátum" > <br>
-        <input type="submit" name="submit" value="Pridať" >
-        
-        <input type="submit" name="delete" value="Odstrániť">
-        
-         <select name="id" id="">
-        
-        
-        <?php
-        while($row = mysqli_fetch_assoc($result)){
-        $id = $row['id'];
-        echo "<option value='$id'>$id</option>";  
-        }
-        ?>
-        </select>
-    </form>
-    <br>
+       <div class="divInput">
+        <form action="index.php" method="post">
+
+            <input type="text" name="name" placeholder="Meno a priezvisko" > <br>
+            <input type="text" name="place" placeholder="Miesto" ><br>
+            <input type="date" name="date" placeholder="Dátum" > <br>
+            <input type="submit" name="submit" value="Pridať" >
+
+        </form>
+        </div>
     
-  <form action="index.php" method="get">
-    <table>
-        <th>Číslo zákazky</th>
-        <th>Meno</th>
-        <th>Miesto</th>
-        <th>Dátum</th>
-        <?php
-        WriteOnScreen();
-        ?>
-    </table>
-  </form>    
+        <br>
+    <div class="divTable">
+      <form action="index.php" method="get">
+        <table>
+            <th>Meno</th>
+            <th>Miesto</th>
+            <th>Dátum</th>
+            <?php
+            WriteOnScreen();
+            ?>
+        </table>
+      </form>    
+      </div>
    </div>  
 
    

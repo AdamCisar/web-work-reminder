@@ -43,7 +43,7 @@ function WriteOnScreen(){
     while($row = mysqli_fetch_assoc($result)){
         
         echo '<tr>';
-        echo "<td>". $row['id'].'</td><td>'.$row['name'].'</td><td>'.$row['place'].'</td><td>'.$row['date'].'</td>';    
+        echo "<td>".$row['name'].'</td><td>'.$row['place'].'</td><td>'.$row['date'].'</td>';    
        
         echo '<td class="button"> 
         <button type="submit" name="id" value="'.$row['id'].'">Odstrániť</button></td>';
