@@ -38,7 +38,7 @@
 
             <input type="text" name="name" placeholder="Meno a priezvisko" > <br>
             <input type="text" name="place" placeholder="Miesto" ><br>
-            <input type="date" name="date" placeholder="Dátum" > <br>
+            <input type="date" name="date"  placeholder="Dátum" > <br>
             <input type="submit" name="submit" value="Pridať" >
 
         </form>
@@ -53,7 +53,12 @@
             <th>Dátum</th>
             <?php
             WriteOnScreen();
+          
+            
             ?>
+            
+            
+            
         </table>
       </form>    
       </div>
